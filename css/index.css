@@ -14,3 +14,11 @@ body {
 #projects {
     max-width: 1080px;gia
 }
+
+.media-logotype {
+    width: 20px;
+} 
+
+.media-logotype #linkdin{
+    height: 20px;
+}
