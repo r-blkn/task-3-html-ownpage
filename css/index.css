@@ -31,21 +31,38 @@ header nav .menu a:hover {
     border: 1px solid white;
 }
 
+header nav img {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+
+header  nav .navigation {
+    visibility: hidden;
+}
+
 header .banner {
     background-image: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
     min-height: 450px;
+    max-height: 840px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+header p img {
+    width: 200px;
+    height: 200px;
+    align-content: left;
+}
 #quote {
     align-self: flex-end;
-    font-size: 0.2rem;
+    font-size: 1rem;
     margin: 0 3rem 0 0;
+
 }
 
 button {
@@ -76,7 +93,22 @@ header div p {
 
 header .banner p img {
     display: flex;
-    width: 5rem;
-    height: 5rem;
     justify-content: flex-end;
+}
+
+@media (min-width: 600px) {
+    header  nav #burger-icon {
+    visibility: hidden;
+}
+   header nav .navigation {
+       visibility: visible;
+   }
+
+   header p img{
+       transform: scale(1.5);
+   }
+
+   header .banner h1 {
+       font-family: 144px;
+   }
 }
