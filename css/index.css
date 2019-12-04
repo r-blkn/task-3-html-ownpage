@@ -1,28 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab&display=swap');
+
+:root {
+    font-family: 'Roboto Mono';
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 980px;
+    margin: auto;
+    background-color: dimgray;
     color: white;
-    position: absolute;
+}
+
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid white;
+}
+
+header .banner {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.logotype {
-    width: 177px;
-    height: 177px;
+#quote {
+    align-self: flex-end;
+    font-size: 0.2rem;
+    margin: 0 3rem 0 0;
 }
 
-#projects {
-    max-width: 1080px;gia
+button {
+    border-radius: 0.3rem;
+    background-color: #F5F5F5;
+    padding: 5px 10px 8px 10px;
+    margin: 3rem;=;
+  }
+  button:hover {
+    animation-name: button-learn;
+    animation-duration: 750ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes button button-learn {
+    0% {
+    background-color: #F5F5F5;
+    }
+    100% {
+      background-color: #9e9e9e;
+    }
+  }
+header div p {
+    display: flex;
+    align-self: center;
+    margin-top: 10rem; 
 }
 
-.media-logotype {
-    width: 20px;
-} 
-
-.media-logotype #linkdin{
-    height: 20px;
-}
-
-#whatdo {
-    width: 80px;
+header .banner p img {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: flex-end;
 }
