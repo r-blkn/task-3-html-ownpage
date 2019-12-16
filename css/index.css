@@ -112,3 +112,42 @@ header .banner p img {
        font-family: 144px;
    }
 }
+
+/* What Do */
+.what__do__logo {
+    width: 80px;
+}
+
+.what__do__inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.what__do__title {
+    text-align: center;
+}
+
+/* Projects */
+.projects__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects__title {
+    text-align: center;
+}
+
+/* Mesage Form */
+.message__form {
+    text-align: center;
+}
+
+.message__title {
+    text-align: center;
+}
+
+.media-logotype {
+    display: block;
+    max-width: 33.33333333%;
+}
